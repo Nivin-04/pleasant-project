@@ -31,7 +31,7 @@ const products = [
     <link rel="stylesheet" href="/global.css" />
     <link rel="stylesheet" href="/index.css" />
   </head>
-  <body>
+  <body class="page-retro">
     <Header />
     <main>
       <Sidebar />
@@ -48,7 +48,17 @@ const products = [
 
 
 <style>
-    body {
-        background: linear-gradient(180deg, #008A9D 0%, #6EB2A5 24.04%, #FFEAB8 51.92%, #FF6C1C 77.88%, #FF3401 100%);
-    }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #008A9D 0%, #6EB2A5 24.04%, #FFEAB8 51.92%, #FF6C1C 77.88%, #FF3401 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
 </style>

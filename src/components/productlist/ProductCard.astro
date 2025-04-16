@@ -2,10 +2,12 @@
 const { title, price, image } = Astro.props;
 ---
 <div>
-  <img src={image} alt={title} />
-  <h3>{title}</h3>
-  <p>{price} DKK</p>
-</div>
+    <a href="/product">
+      <img src={image} alt={title} />
+    </a>
+    <h3>{title}</h3>
+    <p>{price} DKK</p>
+  </div>
 
 <style>
 

@@ -1,9 +1,9 @@
     /* Product Grid */
     main section {
+        flex: 1;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 2rem;
-        padding: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
       }
       
       /* Product Card */
@@ -22,3 +22,18 @@
         max-width: 100%;
         display: block;
       }
+
+      main {
+        display: flex;
+        align-items: flex-start; 
+        gap: 2rem; 
+        padding: 2rem;
+      }
+      
+      aside {
+        width: 250px;
+        flex-shrink: 0;
+      }
+      
+
+      
