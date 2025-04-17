@@ -48,11 +48,13 @@ const product = {
         <ul class="description-list">
           {product.description.map(line => <li>{line}</li>)}
         </ul>
-  
+
+        <div class="sizes">
         <label for="size">Size:</label>
         <select id="size">
           {product.size.map(s => <option value={s}>{s}</option>)}
         </select>
+      </div>
   
         <button class="add-to-bag">Add to Bag</button>
   

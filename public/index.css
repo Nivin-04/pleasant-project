@@ -34,6 +34,21 @@
         width: 250px;
         flex-shrink: 0;
       }
-      
 
+      /* MOBILE VER */
+      @media (max-width: 768px) {
+        main {
+          flex-direction: column;
+          padding: 1rem;
+        }
       
+        aside {
+          width: 100%;
+          margin-bottom: 1.5rem;
+        }
+      
+        main section {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+      }
