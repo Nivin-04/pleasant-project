@@ -89,3 +89,41 @@
     align-items: center;
   }
   
+
+  @media (max-width: 768px) {
+    .product-page {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 1rem;
+    }
+  
+    .product-gallery {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      align-items: flex-start;
+    }
+  
+    .thumbnails {
+      flex-direction: row;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  
+    .thumb {
+      width: 60px;
+    }
+  
+    .main-image {
+      max-width: 100%;
+    }
+  
+    .product-info {
+      width: 100%;
+    }
+  
+    .sizes select {
+      width: 100%;
+      padding-inline-start: 1rem;
+    }
+  }
