@@ -1,0 +1,54 @@
+    /* Product Grid */
+    main section {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+      }
+      
+      /* Product Card */
+      section h3 {
+        margin-top: 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+      }
+      
+      section p {
+        font-size: 0.9rem;
+        color: #444;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      main {
+        display: flex;
+        align-items: flex-start; 
+        gap: 2rem; 
+        padding: 2rem;
+      }
+      
+      aside {
+        width: 250px;
+        flex-shrink: 0;
+      }
+
+      /* MOBILE VER */
+      @media (max-width: 768px) {
+        main {
+          flex-direction: column;
+          padding: 1rem;
+        }
+      
+        aside {
+          width: 100%;
+          margin-bottom: 1.5rem;
+        }
+      
+        main section {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+      }

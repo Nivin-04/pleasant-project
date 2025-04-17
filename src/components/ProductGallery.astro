@@ -1,0 +1,11 @@
+---
+const { images } = Astro.props
+---
+<div class="gallery">
+  <div class="thumbnails">
+    {images.map((src: string, i: number) => (
+        <img src={src} alt={`thumb-${i}`} class="thumb" />
+      ))}
+  </div>
+  <img src={images[0]} alt="Main product" class="main-image" />
+</div>
